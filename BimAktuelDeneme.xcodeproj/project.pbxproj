@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		ACECB92C293E78F00092461C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACECB92A293E78F00092461C /* Main.storyboard */; };
 		ACECB92E293E78F30092461C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACECB92D293E78F30092461C /* Assets.xcassets */; };
 		ACECB931293E78F30092461C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACECB92F293E78F30092461C /* LaunchScreen.storyboard */; };
+		ACECB93C293E7C970092461C /* BimService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB93B293E7C970092461C /* BimService.swift */; };
+		ACECB93E293E7CC00092461C /* AktuelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB93D293E7CC00092461C /* AktuelItem.swift */; };
+		ACECB941293E84170092461C /* GetIndexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB940293E84170092461C /* GetIndexResponse.swift */; };
+		B7793465215D9C39D0F2539A /* Pods_BimAktuelDeneme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670ADB744CCBC99D9015235 /* Pods_BimAktuelDeneme.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		414A37E9A6FB49580C7887BD /* Pods-BimAktuelDeneme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BimAktuelDeneme.release.xcconfig"; path = "Target Support Files/Pods-BimAktuelDeneme/Pods-BimAktuelDeneme.release.xcconfig"; sourceTree = "<group>"; };
+		9670ADB744CCBC99D9015235 /* Pods_BimAktuelDeneme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BimAktuelDeneme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACECB921293E78F00092461C /* BimAktuelDeneme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BimAktuelDeneme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACECB924293E78F00092461C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACECB926293E78F00092461C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		ACECB92D293E78F30092461C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACECB930293E78F30092461C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACECB932293E78F30092461C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACECB93B293E7C970092461C /* BimService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BimService.swift; sourceTree = "<group>"; };
+		ACECB93D293E7CC00092461C /* AktuelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktuelItem.swift; sourceTree = "<group>"; };
+		ACECB940293E84170092461C /* GetIndexResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIndexResponse.swift; sourceTree = "<group>"; };
+		EC4916588531D6BF7D2290EC /* Pods-BimAktuelDeneme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BimAktuelDeneme.debug.xcconfig"; path = "Target Support Files/Pods-BimAktuelDeneme/Pods-BimAktuelDeneme.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7793465215D9C39D0F2539A /* Pods_BimAktuelDeneme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3909B78D8480FE653168DFB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9670ADB744CCBC99D9015235 /* Pods_BimAktuelDeneme.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61A9E2EFEF416336E2244354 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC4916588531D6BF7D2290EC /* Pods-BimAktuelDeneme.debug.xcconfig */,
+				414A37E9A6FB49580C7887BD /* Pods-BimAktuelDeneme.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ACECB918293E78F00092461C = {
 			isa = PBXGroup;
 			children = (
 				ACECB923293E78F00092461C /* BimAktuelDeneme */,
 				ACECB922293E78F00092461C /* Products */,
+				61A9E2EFEF416336E2244354 /* Pods */,
+				3909B78D8480FE653168DFB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,8 @@
 		ACECB923293E78F00092461C /* BimAktuelDeneme */ = {
 			isa = PBXGroup;
 			children = (
+				ACECB939293E7C5F0092461C /* Models */,
+				ACECB938293E7C510092461C /* Services */,
 				ACECB924293E78F00092461C /* AppDelegate.swift */,
 				ACECB926293E78F00092461C /* SceneDelegate.swift */,
 				ACECB928293E78F00092461C /* ViewController.swift */,
@@ -67,6 +99,39 @@
 			path = BimAktuelDeneme;
 			sourceTree = "<group>";
 		};
+		ACECB938293E7C510092461C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACECB93B293E7C970092461C /* BimService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACECB939293E7C5F0092461C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACECB93A293E7C660092461C /* ApiResponses */,
+				ACECB93D293E7CC00092461C /* AktuelItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACECB93A293E7C660092461C /* ApiResponses */ = {
+			isa = PBXGroup;
+			children = (
+				ACECB93F293E84040092461C /* BimService */,
+			);
+			path = ApiResponses;
+			sourceTree = "<group>";
+		};
+		ACECB93F293E84040092461C /* BimService */ = {
+			isa = PBXGroup;
+			children = (
+				ACECB940293E84170092461C /* GetIndexResponse.swift */,
+			);
+			path = BimService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACECB935293E78F30092461C /* Build configuration list for PBXNativeTarget "BimAktuelDeneme" */;
 			buildPhases = (
+				66CF5B74ABCE976FE9941194 /* [CP] Check Pods Manifest.lock */,
 				ACECB91D293E78F00092461C /* Sources */,
 				ACECB91E293E78F00092461C /* Frameworks */,
 				ACECB91F293E78F00092461C /* Resources */,
+				D753562B9264B49C0FA05430 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +170,7 @@
 				};
 			};
 			buildConfigurationList = ACECB91C293E78F00092461C /* Build configuration list for PBXProject "BimAktuelDeneme" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,13 +200,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66CF5B74ABCE976FE9941194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BimAktuelDeneme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D753562B9264B49C0FA05430 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BimAktuelDeneme/Pods-BimAktuelDeneme-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BimAktuelDeneme/Pods-BimAktuelDeneme-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BimAktuelDeneme/Pods-BimAktuelDeneme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACECB91D293E78F00092461C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACECB941293E84170092461C /* GetIndexResponse.swift in Sources */,
+				ACECB93C293E7C970092461C /* BimService.swift in Sources */,
 				ACECB929293E78F00092461C /* ViewController.swift in Sources */,
 				ACECB925293E78F00092461C /* AppDelegate.swift in Sources */,
+				ACECB93E293E7CC00092461C /* AktuelItem.swift in Sources */,
 				ACECB927293E78F00092461C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +394,7 @@
 		};
 		ACECB936293E78F30092461C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4916588531D6BF7D2290EC /* Pods-BimAktuelDeneme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +423,7 @@
 		};
 		ACECB937293E78F30092461C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414A37E9A6FB49580C7887BD /* Pods-BimAktuelDeneme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
