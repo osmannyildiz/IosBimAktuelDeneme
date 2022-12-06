@@ -16,6 +16,7 @@
 		ACECB93C293E7C970092461C /* BimService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB93B293E7C970092461C /* BimService.swift */; };
 		ACECB93E293E7CC00092461C /* AktuelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB93D293E7CC00092461C /* AktuelItem.swift */; };
 		ACECB941293E84170092461C /* GetIndexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB940293E84170092461C /* GetIndexResponse.swift */; };
+		ACECB944293F301C0092461C /* TvcAktuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB943293F301C0092461C /* TvcAktuel.swift */; };
 		B7793465215D9C39D0F2539A /* Pods_BimAktuelDeneme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670ADB744CCBC99D9015235 /* Pods_BimAktuelDeneme.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		ACECB93B293E7C970092461C /* BimService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BimService.swift; sourceTree = "<group>"; };
 		ACECB93D293E7CC00092461C /* AktuelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktuelItem.swift; sourceTree = "<group>"; };
 		ACECB940293E84170092461C /* GetIndexResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIndexResponse.swift; sourceTree = "<group>"; };
+		ACECB943293F301C0092461C /* TvcAktuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvcAktuel.swift; sourceTree = "<group>"; };
 		EC4916588531D6BF7D2290EC /* Pods-BimAktuelDeneme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BimAktuelDeneme.debug.xcconfig"; path = "Target Support Files/Pods-BimAktuelDeneme/Pods-BimAktuelDeneme.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				ACECB92D293E78F30092461C /* Assets.xcassets */,
 				ACECB92F293E78F30092461C /* LaunchScreen.storyboard */,
 				ACECB932293E78F30092461C /* Info.plist */,
+				ACECB943293F301C0092461C /* TvcAktuel.swift */,
 			);
 			path = BimAktuelDeneme;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			files = (
 				ACECB941293E84170092461C /* GetIndexResponse.swift in Sources */,
 				ACECB93C293E7C970092461C /* BimService.swift in Sources */,
+				ACECB944293F301C0092461C /* TvcAktuel.swift in Sources */,
 				ACECB929293E78F00092461C /* ViewController.swift in Sources */,
 				ACECB925293E78F00092461C /* AppDelegate.swift in Sources */,
 				ACECB93E293E7CC00092461C /* AktuelItem.swift in Sources */,

@@ -11,20 +11,19 @@ import Alamofire
 class BimService {
     let baseUrl = "https://kolektifapi.kekikakademi.org/bim"
     
-    func getIndex() {
+    func getIndex(then: @escaping (GetIndexResponse) -> Void) {
         AF.request(self.baseUrl, method: .get).validate().response { response in
-            print("hey got the response")
             switch response.result {
             case .success(let value):
                 guard let data = value else { return }
                 do {
                     let resp = try JSONDecoder().decode(GetIndexResponse.self, from: data)
-                    print(resp)
+                    then(resp)
                 } catch let error {
                     print(error)
                 }
             case .failure(let error):
-                print("Error: \(error)")
+                print(error)
             }
         }
     }
