@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import SafariServices
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {    
     
@@ -32,8 +33,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "aktuelTableViewCell", for: indexPath) as! AktuelTableViewCell
         let aktuelItem = DataStore.aktuelItems[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "aktuelTableViewCell", for: indexPath) as! AktuelTableViewCell
         
         cell.titleLabel.text = aktuelItem.title
         cell.priceLabel.text = aktuelItem.price
@@ -43,7 +44,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        let aktuelItem = DataStore.aktuelItems[indexPath.row]
+        
+        let url = URL(string: aktuelItem.url)!
+        let vc = SFSafariViewController(url: url)
+        present(vc, animated: true)
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
 

@@ -22,6 +22,7 @@ class BimService {
                     // Fix faulty data coming from the API
                     for i in 0..<resp.items.count {
                         resp.items[i].imageUrl = resp.items[i].imageUrl.replacingOccurrences(of: "//bim.com.tr", with: "//www.bim.com.tr")
+                        resp.items[i].url = resp.items[i].url.replacingOccurrences(of: "//bim.com.tr", with: "//www.bim.com.tr")
                     }
                     
                     then(resp)
