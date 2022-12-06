@@ -48,14 +48,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-jB-0jH" userLabel="titleLabel">
-                                                    <rect key="frame" x="164" y="19" width="206" height="28.666666666666671"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                    <rect key="frame" x="160" y="19" width="210" height="25.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owg-de-qdu" userLabel="priceLabel">
-                                                    <rect key="frame" x="164" y="63.666666666666657" width="206" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <rect key="frame" x="160" y="56.333333333333343" width="210" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -68,12 +68,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="fSR-jB-0jH" firstAttribute="top" secondItem="svC-gy-q5Q" secondAttribute="topMargin" constant="8" id="EyV-EF-Kco"/>
-                                                <constraint firstItem="owg-de-qdu" firstAttribute="leading" secondItem="LBM-6d-iQb" secondAttribute="trailing" constant="16" id="Grj-SD-SA8"/>
+                                                <constraint firstItem="owg-de-qdu" firstAttribute="leading" secondItem="LBM-6d-iQb" secondAttribute="trailing" constant="12" id="Grj-SD-SA8"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="fSR-jB-0jH" secondAttribute="trailing" id="Nru-BG-F5a"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="owg-de-qdu" secondAttribute="trailing" id="Wv8-Ef-d2f"/>
                                                 <constraint firstItem="LBM-6d-iQb" firstAttribute="top" secondItem="svC-gy-q5Q" secondAttribute="topMargin" id="fKe-iP-fqZ"/>
-                                                <constraint firstItem="owg-de-qdu" firstAttribute="top" secondItem="fSR-jB-0jH" secondAttribute="bottom" constant="16" id="gmc-gc-bFl"/>
-                                                <constraint firstItem="fSR-jB-0jH" firstAttribute="leading" secondItem="LBM-6d-iQb" secondAttribute="trailing" constant="16" id="ih1-Ik-PNC"/>
+                                                <constraint firstItem="owg-de-qdu" firstAttribute="top" secondItem="fSR-jB-0jH" secondAttribute="bottom" constant="12" id="gmc-gc-bFl"/>
+                                                <constraint firstItem="fSR-jB-0jH" firstAttribute="leading" secondItem="LBM-6d-iQb" secondAttribute="trailing" constant="12" id="ih1-Ik-PNC"/>
                                                 <constraint firstItem="LBM-6d-iQb" firstAttribute="leading" secondItem="svC-gy-q5Q" secondAttribute="leadingMargin" id="y0k-Z7-rgh"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="LBM-6d-iQb" secondAttribute="bottom" id="yFI-ta-cKr"/>
                                             </constraints>

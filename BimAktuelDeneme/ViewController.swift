@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {    
     
@@ -36,17 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.titleLabel.text = aktuelItem.title
         cell.priceLabel.text = aktuelItem.price
-        DispatchQueue.global().async {
-            let imageUrl = URL(string: aktuelItem.imageUrl)!
-            do {
-                let imageData = try Data(contentsOf: imageUrl)
-                DispatchQueue.main.async {
-                    cell.productImageView.image = UIImage(data: imageData)
-                }
-            } catch let error {
-                print(error)
-            }
-        }
+        cell.productImageView.sd_setImage(with: URL(string: aktuelItem.imageUrl), placeholderImage: UIImage(named: "placeholder.png"))
         
         return cell
     }

@@ -6,5 +6,6 @@ target 'BimAktuelDeneme' do
   use_frameworks!
 
   # Pods for BimAktuelDeneme
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 5.0'
+  pod 'SDWebImage', '~> 5.0'
 end
