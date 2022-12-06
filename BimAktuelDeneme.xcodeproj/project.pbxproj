@@ -15,8 +15,9 @@
 		ACECB931293E78F30092461C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACECB92F293E78F30092461C /* LaunchScreen.storyboard */; };
 		ACECB93C293E7C970092461C /* BimService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB93B293E7C970092461C /* BimService.swift */; };
 		ACECB93E293E7CC00092461C /* AktuelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB93D293E7CC00092461C /* AktuelItem.swift */; };
-		ACECB941293E84170092461C /* GetIndexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB940293E84170092461C /* GetIndexResponse.swift */; };
-		ACECB944293F301C0092461C /* TvcAktuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB943293F301C0092461C /* TvcAktuel.swift */; };
+		ACECB941293E84170092461C /* GetAktuelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB940293E84170092461C /* GetAktuelResponse.swift */; };
+		ACECB944293F301C0092461C /* AktuelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB943293F301C0092461C /* AktuelTableViewCell.swift */; };
+		ACECB94B293F484A0092461C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACECB94A293F484A0092461C /* DataStore.swift */; };
 		B7793465215D9C39D0F2539A /* Pods_BimAktuelDeneme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670ADB744CCBC99D9015235 /* Pods_BimAktuelDeneme.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +34,9 @@
 		ACECB932293E78F30092461C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACECB93B293E7C970092461C /* BimService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BimService.swift; sourceTree = "<group>"; };
 		ACECB93D293E7CC00092461C /* AktuelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktuelItem.swift; sourceTree = "<group>"; };
-		ACECB940293E84170092461C /* GetIndexResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIndexResponse.swift; sourceTree = "<group>"; };
-		ACECB943293F301C0092461C /* TvcAktuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvcAktuel.swift; sourceTree = "<group>"; };
+		ACECB940293E84170092461C /* GetAktuelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAktuelResponse.swift; sourceTree = "<group>"; };
+		ACECB943293F301C0092461C /* AktuelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktuelTableViewCell.swift; sourceTree = "<group>"; };
+		ACECB94A293F484A0092461C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		EC4916588531D6BF7D2290EC /* Pods-BimAktuelDeneme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BimAktuelDeneme.debug.xcconfig"; path = "Target Support Files/Pods-BimAktuelDeneme/Pods-BimAktuelDeneme.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,8 @@
 		ACECB923293E78F00092461C /* BimAktuelDeneme */ = {
 			isa = PBXGroup;
 			children = (
+				ACECB94C293F4BC10092461C /* Data */,
+				ACECB947293F46940092461C /* Ui */,
 				ACECB939293E7C5F0092461C /* Models */,
 				ACECB938293E7C510092461C /* Services */,
 				ACECB924293E78F00092461C /* AppDelegate.swift */,
@@ -97,7 +101,6 @@
 				ACECB92D293E78F30092461C /* Assets.xcassets */,
 				ACECB92F293E78F30092461C /* LaunchScreen.storyboard */,
 				ACECB932293E78F30092461C /* Info.plist */,
-				ACECB943293F301C0092461C /* TvcAktuel.swift */,
 			);
 			path = BimAktuelDeneme;
 			sourceTree = "<group>";
@@ -130,9 +133,25 @@
 		ACECB93F293E84040092461C /* BimService */ = {
 			isa = PBXGroup;
 			children = (
-				ACECB940293E84170092461C /* GetIndexResponse.swift */,
+				ACECB940293E84170092461C /* GetAktuelResponse.swift */,
 			);
 			path = BimService;
+			sourceTree = "<group>";
+		};
+		ACECB947293F46940092461C /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				ACECB943293F301C0092461C /* AktuelTableViewCell.swift */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		ACECB94C293F4BC10092461C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ACECB94A293F484A0092461C /* DataStore.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACECB941293E84170092461C /* GetIndexResponse.swift in Sources */,
+				ACECB941293E84170092461C /* GetAktuelResponse.swift in Sources */,
 				ACECB93C293E7C970092461C /* BimService.swift in Sources */,
-				ACECB944293F301C0092461C /* TvcAktuel.swift in Sources */,
+				ACECB94B293F484A0092461C /* DataStore.swift in Sources */,
+				ACECB944293F301C0092461C /* AktuelTableViewCell.swift in Sources */,
 				ACECB929293E78F00092461C /* ViewController.swift in Sources */,
 				ACECB925293E78F00092461C /* AppDelegate.swift in Sources */,
 				ACECB93E293E7CC00092461C /* AktuelItem.swift in Sources */,
